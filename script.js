@@ -42,3 +42,11 @@ function showMe(id, type) {
       break;
   }
 }
+
+function dropMe(id, type) {
+  // TODO
+}
+
+function transformMe(id, type) {
+  // TODO
+}
