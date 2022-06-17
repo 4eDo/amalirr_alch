@@ -26,6 +26,18 @@
   color: #808080;
   text-decoration:line-through;
 }
+.bottom_buttons{
+  position: absolute;
+  display: block;
+  margin-top: 170px;
+}
+.bot_but {
+  display: inline-block;
+  padding: 4px;
+  cursor: pointer;
+  background: #80808050;
+  border: 1px solid #000;
+}
 .ingr_item {
   position: absolute;
   display: none;
