@@ -1,0 +1,49 @@
+.ingr_item {
+  width: 600px;
+  border: 1px solid #000;
+  height: 200px;
+}
+h4 {
+  text-align: center;
+}
+.col_l{
+  display: inline-block;
+  width: 250px;
+  float: left;
+  margin-left: 20px;
+}
+.col_l img {
+  width: 200px;
+  height: 110px;
+}
+.col_r{
+  display: inline-block;
+  width: 250px;
+}
+.ingr_params{
+  vertical-align: middle;
+}
+.before_bar {
+  display: inline-block;
+  width: 50px;
+}
+.bar{
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #000;
+  width: 200px;
+  height: 5px;
+  border-radius: 2px;
+  margin: 5px;
+  cursor: pointer;
+}
+.bar span {
+  display: inline-block;
+  background-color: #000;
+  height: inherit;
+}
+.magic span {  background-color: #e613f9;}
+.phys span {  background-color: #0f74ff;}
+.holy span {  background-color: #fdcf39;}
+.def span {  background-color: #4ab304;}
+.atc span {  background-color: #f91313;}
