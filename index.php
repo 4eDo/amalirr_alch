@@ -1,6 +1,7 @@
 <?php
+	header('Content-Type: text/html; charset=utf-8');
 	$ingrList = array(				// All ingrs
-		"a" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Чешуйка Гремлина",
@@ -38,7 +39,7 @@
 				"atc" => 30
 			)
 		),
-		"b" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Мэрисьюшкина слеза",
@@ -70,7 +71,7 @@
 				"atc" => 70
 			)
 		),
-		"c" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "ГМские нервы",
@@ -102,7 +103,7 @@
 				"atc" => 60
 			)
 		),
-		"d" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Сборник правил форума",
@@ -140,7 +141,7 @@
 				"atc" => 0
 			)
 		),
-		"e" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Матчасть форума",
@@ -178,7 +179,7 @@
 				"atc" => 20
 			)
 		),
-		"f" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Список долгов",
@@ -216,7 +217,7 @@
 				"atc" => 15
 			)
 		),
-		"g" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Кровохлёбка",
@@ -254,7 +255,7 @@
 				"atc" => 70
 			)
 		),
-		"h" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Заговорная трава",
@@ -292,7 +293,7 @@
 				"atc" => 0
 			)
 		),
-		"i" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Роса росянки",
@@ -324,7 +325,7 @@
 				"atc" => 70
 			)
 		),
-		"j" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Лаковица Аметистовая",
@@ -362,7 +363,7 @@
 				"atc" => 70
 			)
 		),
-		"k" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Щитолистник",
@@ -400,7 +401,7 @@
 				"atc" => 0
 			)
 		),
-		"l" => array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
+		array(						// Ingr type [base - сырой, 1 - настойка, 2 - порошок, 3 - вытяжка]
 			"base" => array(					// СЫРОЙ
 				"isOk" => true,
 				"name" => "Хмель",
@@ -437,7 +438,65 @@
 				"def" => 35,
 				"atc" => 60
 			)
-		),
-	
+		)
 	);
+	
+	$template = '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="https://4edo.github.io/amalirr_alch/style.css" media="screen" /><script type="text/javascript" src="https://4edo.github.io/amalirr_alch/script.js"></script></head>';
+	for($i = 0; $i < count($ingrList); $i++) {
+		$template .= '<div class="ingr_items"><div class="r_buttons"><span id="'.$i.'-base-but" class="r_button checked_ingr" onclick="showMe('.$i.', \'base\')">Сырой</span>';
+		if($ingrList[$i]['type1']['isOk']) {
+			$template .= '<span id="'.$i.'-type1-but" class="r_button" onclick="showMe('.$i.', \'type1\')">Настойка</span>';
+		} else {
+			$template .= '<span id="'.$i.'-type1-but" class="r_button bad_button" title="Такого ингредиента не существует!">Настойка</span>';
+		}
+		if($ingrList[$i]['type2']['isOk']) {
+			$template .= '<span id="'.$i.'-type2-but" class="r_button" onclick="showMe('.$i.', \'type2\')">Сушёный</span>';
+		} else {
+			$template .= '<span id="'.$i.'-type2-but" class="r_button bad_button" title="Такого ингредиента не существует!">Сушёный</span>';
+		}
+		$template .= '<span id="'.$i.'-type3-but" class="r_button" onclick="showMe('.$i.', \'type3\')">Вытяжка</span></div>';
+		
+		$template .= '<div class="ingr_item" id="'.$i.'-base" style="display:block;"><h4>'.$ingrList[$i]['base']['name'].'</h4><div class="col_l"><img src=""></div>';
+		$template .= '<div class="col_r"><div class="ingr_params"><span class="before_bar">Маг &nbsp;</span><div class="bar magic" title="Магическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['base']['magic'].'%">&nbsp;</span></div></div>';
+		$template .= '<div class="ingr_params"><span class="before_bar">Физ &nbsp;</span><div class="bar phys" title="Физическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['base']['phys'].'%">&nbsp;</span></div></div>';
+		$template .= '<div class="ingr_params"><span class="before_bar">Свят &nbsp;</span><div class="bar holy" title="Святость"><span class="bg" style="width:'.$ingrList[$i]['base']['holy'].'%">&nbsp;</span></div></div>';
+		$template .= '<div class="ingr_params"><span class="before_bar">Защ &nbsp;</span><div class="bar def" title="Защита"><span class="bg" style="width:'.$ingrList[$i]['base']['def'].'%">&nbsp;</span></div></div>';
+		$template .= '<div class="ingr_params"><span class="before_bar">Атк &nbsp;</span><div class="bar atc" title="Атака"><span class="bg" style="width:'.$ingrList[$i]['base']['atc'].'%">&nbsp;</span></div></div></div>';
+		$template .= '<div class="bottom_buttons"><span id="'.$i.'-base-bot_but" class="bot_but" onclick="dropMe('.$i.', \'base\')">Положить в котёл</span><span id="'.$i.'-type1-bot_but" class="bot_but" onclick="transformMe('.$i.', \'type1\')">Приготовить настойку</span><span id="'.$i.'-type2-bot_but" class="bot_but" onclick="transformMe('.$i.', \'type2\')">Высушить</span><span id="'.$i.'-type3-bot_but" class="bot_but" onclick="transformMe('.$i.', \'type3\')">Получить вытяжку</span></div></div>';
+
+		if($ingrList[$i]['type1']['isOk']) {
+			$template .= '<div class="ingr_item" id="'.$i.'-type1" style="display:none;"><h4>'.$ingrList[$i]['type1']['name'].'</h4><div class="col_l"><img src=""></div>';
+			$template .= '<div class="col_r"><div class="ingr_params"><span class="before_bar">Маг &nbsp;</span><div class="bar magic" title="Магическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['type1']['magic'].'%">&nbsp;</span></div></div>';
+			$template .= '<div class="ingr_params"><span class="before_bar">Физ &nbsp;</span><div class="bar phys" title="Физическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['type1']['phys'].'%">&nbsp;</span></div></div>';
+			$template .= '<div class="ingr_params"><span class="before_bar">Свят &nbsp;</span><div class="bar holy" title="Святость"><span class="bg" style="width:'.$ingrList[$i]['type1']['holy'].'%">&nbsp;</span></div></div>';
+			$template .= '<div class="ingr_params"><span class="before_bar">Защ &nbsp;</span><div class="bar def" title="Защита"><span class="bg" style="width:'.$ingrList[$i]['type1']['def'].'%">&nbsp;</span></div></div>';
+			$template .= '<div class="ingr_params"><span class="before_bar">Атк &nbsp;</span><div class="bar atc" title="Атака"><span class="bg" style="width:'.$ingrList[$i]['type1']['atc'].'%">&nbsp;</span></div></div></div>';
+			$template .= '<div class="bottom_buttons"><span id="'.$i.'-type1-bot_but" class="bot_but" onclick="dropMe('.$i.', \'type1\')">Положить в котёл</span></div></div>';
+		} else {
+			$template .= '<span class="ingr_item" id="'.$i.'-type1" style="display:none;"></span>';
+		}
+		
+		if($ingrList[$i]['type2']['isOk']) {
+			$template .= '<div class="ingr_item" id="'.$i.'-type2" style="display:none;"><h4>'.$ingrList[$i]['type2']['name'].'</h4><div class="col_l"><img src=""></div>';
+			$template .= '<div class="col_r"><div class="ingr_params"><span class="before_bar">Маг &nbsp;</span><div class="bar magic" title="Магическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['type2']['magic'].'%">&nbsp;</span></div></div>';
+			$template .= '<div class="ingr_params"><span class="before_bar">Физ &nbsp;</span><div class="bar phys" title="Физическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['type2']['phys'].'%">&nbsp;</span></div></div>';
+			$template .= '<div class="ingr_params"><span class="before_bar">Свят &nbsp;</span><div class="bar holy" title="Святость"><span class="bg" style="width:'.$ingrList[$i]['type2']['holy'].'%">&nbsp;</span></div></div>';
+			$template .= '<div class="ingr_params"><span class="before_bar">Защ &nbsp;</span><div class="bar def" title="Защита"><span class="bg" style="width:'.$ingrList[$i]['type2']['def'].'%">&nbsp;</span></div></div>';
+			$template .= '<div class="ingr_params"><span class="before_bar">Атк &nbsp;</span><div class="bar atc" title="Атака"><span class="bg" style="width:'.$ingrList[$i]['type2']['atc'].'%">&nbsp;</span></div></div></div>';
+			$template .= '<div class="bottom_buttons"><span id="'.$i.'-type2-bot_but" class="bot_but" onclick="dropMe('.$i.', \'type2\')">Положить в котёл</span></div></div>';
+		} else {
+			$template .= '<span class="ingr_item" id="'.$i.'-type2" style="display:none;"></span>';
+		}
+		
+		$template .= '<div class="ingr_item" id="'.$i.'-type3" style="display:none;"><h4>'.$ingrList[$i]['type3']['name'].'</h4><div class="col_l"><img src=""></div>';
+		$template .= '<div class="col_r"><div class="ingr_params"><span class="before_bar">Маг &nbsp;</span><div class="bar magic" title="Магическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['type3']['magic'].'%">&nbsp;</span></div></div>';
+		$template .= '<div class="ingr_params"><span class="before_bar">Физ &nbsp;</span><div class="bar phys" title="Физическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['type3']['phys'].'%">&nbsp;</span></div></div>';
+		$template .= '<div class="ingr_params"><span class="before_bar">Свят &nbsp;</span><div class="bar holy" title="Святость"><span class="bg" style="width:'.$ingrList[$i]['type3']['holy'].'%">&nbsp;</span></div></div>';
+		$template .= '<div class="ingr_params"><span class="before_bar">Защ &nbsp;</span><div class="bar def" title="Защита"><span class="bg" style="width:'.$ingrList[$i]['type3']['def'].'%">&nbsp;</span></div></div>';
+		$template .= '<div class="ingr_params"><span class="before_bar">Атк &nbsp;</span><div class="bar atc" title="Атака"><span class="bg" style="width:'.$ingrList[$i]['type3']['atc'].'%">&nbsp;</span></div></div></div>';
+		$template .= '<div class="bottom_buttons"><span id="'.$i.'-type3-bot_but" class="bot_but" onclick="dropMe('.$i.', \'type3\')">Положить в котёл</span></div></div>';
+		
+		$template .= '</div>';
+	}
+	echo $template;
 ?>
