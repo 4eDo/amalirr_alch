@@ -1,6 +1,29 @@
-.ingr_item {
-  width: 600px;
+.ingr_items {
+  width: 550px;
   border: 1px solid #000;
+  height: 200px;
+}
+.r_buttons {
+  position: absolute;
+  display: block;
+  margin: 5px;
+  margin-left: 560px;
+  
+}
+.r_button {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  background: #80808050;
+  border: 1px solid #000;
+}
+.checked_ingr {
+  background: #808080;
+}
+.ingr_item {
+  position: absolute;
+  display: none;
+  width: 550px;
   height: 200px;
 }
 h4 {
@@ -10,11 +33,12 @@ h4 {
   display: inline-block;
   width: 250px;
   float: left;
-  margin-left: 20px;
 }
 .col_l img {
   width: 200px;
   height: 110px;
+  margin-left: 10px;
+  margin-top: -10px;
 }
 .col_r{
   display: inline-block;
