@@ -20,6 +20,12 @@
 .checked_ingr {
   background: #808080;
 }
+.bad_button {
+  cursor: default;
+  background: #80808050;
+  color: #808080;
+  text-decoration:line-through;
+}
 .ingr_item {
   position: absolute;
   display: none;
