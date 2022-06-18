@@ -44,22 +44,26 @@ function showMe(id, type) {
 }
 
 function dropMe(id, type, name, phys, magic, holy, def, atc) {
-  var myHtmlContent = '<td>'+name+'</td>';
-   if(document.getElementById('secret_textarea').value.length < 1) {
-     document.getElementById('secret_textarea').value += id + "-" + type;
-   } else {
-     document.getElementById('secret_textarea').value += "|" + id + "-" + type;
-   }
-  var tableRef = document.getElementById('ingr_in_boiler').getElementsByTagName('tbody')[0];
+	if(parseInt(document.getElementById("count_" + id).innerText, 10) > 0){
+	  var myHtmlContent = '<td>'+name+'</td>';
+	   if(document.getElementById('secret_textarea').value.length < 1) {
+	     document.getElementById('secret_textarea').value += id + "-" + type;
+	   } else {
+	     document.getElementById('secret_textarea').value += "|" + id + "-" + type;
+	   }
+	  var tableRef = document.getElementById('ingr_in_boiler').getElementsByTagName('tbody')[0];
 
-  var newRow = tableRef.insertRow(tableRef.rows.length);
-  newRow.innerHTML = myHtmlContent;
-  updBoilerParams('phys', phys);
-  updBoilerParams('magic', magic);
-  updBoilerParams('holy', holy);
-  updBoilerParams('def', def);
-  updBoilerParams('atc', atc);
-  document.getElementById("count_" + id).innerText =  parseInt(document.getElementById("count_" + id).innerText, 10) - 1;
+	  var newRow = tableRef.insertRow(tableRef.rows.length);
+	  newRow.innerHTML = myHtmlContent;
+	  updBoilerParams('phys', phys);
+	  updBoilerParams('magic', magic);
+	  updBoilerParams('holy', holy);
+	  updBoilerParams('def', def);
+	  updBoilerParams('atc', atc);
+	  document.getElementById("count_" + id).innerText =  parseInt(document.getElementById("count_" + id).innerText, 10) - 1;
+	} else {
+		alert('Ингредиент "' + name + '" закончился!');
+	}
 }
 
 function transformMe(id, type) {
