@@ -61,6 +61,7 @@ function dropMe(id, type, name, phys, magic, holy, def, atc) {
 	  updBoilerParams('def', def);
 	  updBoilerParams('atc', atc);
 	  document.getElementById("ingr_in_boiler_count").innerText = parseInt(document.getElementById("ingr_in_boiler_count").innerText, 10) + 1;
+	  document.getElementById("count_row").style.display="block";
 	  document.getElementById("count_" + id + "-" + type).innerText =  parseInt(document.getElementById("count_" + id + "-" + type).innerText, 10) - 1;
 	} else {
 		alert('Ингредиент "' + name + '" закончился!');
