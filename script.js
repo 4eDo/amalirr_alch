@@ -44,7 +44,9 @@ function showMe(id, type) {
 }
 
 function dropMe(id, type, name, phys, magic, holy, def, atc) {
-	if(id !=12 && id != 13) {
+	if((id ==12 || id = 13) && type == 'base') {
+		alert('Это секретный ингредиент! Его сырым класть нельзя. Сначала обработайте.');
+	} else {
 		if(parseInt(document.getElementById("count_" + id + "-" + type).innerText, 10) > 0){
 		  var myHtmlContent = '<td>'+name+'</td>';
 		   if(document.getElementById('secret_textarea').value.length < 1) {
@@ -67,8 +69,6 @@ function dropMe(id, type, name, phys, magic, holy, def, atc) {
 		} else {
 			alert('Ингредиент "' + name + '" закончился!');
 		}
-	} else {
-		alert('Это секретный ингредиент! Его сырым класть нельзя. Сначала обработайте.');
 	}
 }
 
