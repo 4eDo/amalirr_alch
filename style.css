@@ -89,3 +89,12 @@ h4 {
 .holy span {  background-color: #fdcf39;}
 .def span {  background-color: #4ab304;}
 .atc span {  background-color: #f91313;}
+
+#boiler_panel {
+  vertical-align: middle;
+}
+#boiler {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+}
