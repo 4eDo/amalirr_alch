@@ -54,8 +54,37 @@ function dropMe(id, type, name) {
 
   var newRow = tableRef.insertRow(tableRef.rows.length);
   newRow.innerHTML = myHtmlContent;
+  updBoilerParams('phys', phys);
+  updBoilerParams('magic', magic);
+  updBoilerParams('holy', holy);
+  updBoilerParams('def', def);
+  updBoilerParams('atc', atc);
 }
 
 function transformMe(id, type) {
   // TODO
+}
+
+function updBoilerParams(type, addValue) {
+	var textareaId = "boiler_" + type + "_str";
+	var barId = "boiler_" + type;
+	var existStr = document.getElementById(textareaId).value;
+	var newStr = "";
+	var count = 0;
+	var sum = 0;
+	if(existStr.length < 1) {
+		newStr = addValue;
+    count = 1;
+    sum = addValue;
+	} else {
+		newStr = existStr + " " + addValue;
+    var values = newStr.split(' ');
+	values.forEach(element => {
+		count++;
+		sum += parseInt(element, 10);
+	});
+	}
+   document.getElementById(textareaId).value = newStr;
+	
+	document.getElementById(barId).style.width = sum/count + "%";
 }
