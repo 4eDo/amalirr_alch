@@ -101,10 +101,11 @@ h4 {
 
 #ingr_panel {
   display: inline-block;
-    max-height: 96vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    direction: rtl;
+  max-height: 96vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  direction: rtl;
+  width: 700px;
 }
 
 #boiler_panel {
