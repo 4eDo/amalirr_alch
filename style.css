@@ -4,7 +4,7 @@ html, body, #content {
 
 .ingr_items {
   position: relative;
-  width: 550px;
+  width: 520px;
   border: 1px solid #000;
   height: 200px;
   float: left;
@@ -16,7 +16,7 @@ html, body, #content {
   position: absolute;
   display: block;
   margin: 5px;
-  margin-left: 560px;
+  margin-left: 530px;
   
 }
 .r_button {
@@ -50,7 +50,7 @@ html, body, #content {
 .ingr_item {
   position: absolute;
   display: none;
-  width: 550px;
+  width: 520px;
   height: 200px;
 }
 h4 {
