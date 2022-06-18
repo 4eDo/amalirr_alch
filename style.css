@@ -4,7 +4,9 @@
   margin-left: -60px;
   margin-top: 80px;
 }
-
+.ingr_count::after {
+  content: " шт.";
+}
 .ingr_items {
   position: relative;
   width: 520px;
