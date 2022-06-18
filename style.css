@@ -3,6 +3,7 @@ html, body, #content {
 }
 
 .ingr_items {
+  position: relative;
   width: 550px;
   border: 1px solid #000;
   height: 200px;
@@ -96,6 +97,10 @@ h4 {
 
 #ingr_panel {
   display: inline-block;
+    max-height: 96vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
 }
 
 #boiler_panel {
