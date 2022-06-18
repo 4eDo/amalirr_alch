@@ -43,7 +43,7 @@ function showMe(id, type) {
   }
 }
 
-function dropMe(id, type, name) {
+function dropMe(id, type, name, phys, magic, holy, def, atc) {
   var myHtmlContent = '<td>'+name+'</td>';
    if(document.getElementById('secret_textarea').value.length < 1) {
      document.getElementById('secret_textarea').value += id + "-" + type;
