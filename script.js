@@ -44,7 +44,7 @@ function showMe(id, type) {
 }
 
 function dropMe(id, type, name, phys, magic, holy, def, atc) {
-	if((id ==12 || id = 13) && type == 'base') {
+	if((id ==12 || id == 13) && type == 'base') {
 		alert('Это секретный ингредиент! Его сырым класть нельзя. Сначала обработайте.');
 	} else {
 		if(parseInt(document.getElementById("count_" + id + "-" + type).innerText, 10) > 0){
