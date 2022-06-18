@@ -44,7 +44,7 @@ function showMe(id, type) {
 }
 
 function dropMe(id, type, name, phys, magic, holy, def, atc) {
-	if(parseInt(document.getElementById("count_" + id).innerText, 10) > 0){
+	if(parseInt(document.getElementById("count_" + id + "-" + type).innerText, 10) > 0){
 	  var myHtmlContent = '<td>'+name+'</td>';
 	   if(document.getElementById('secret_textarea').value.length < 1) {
 	     document.getElementById('secret_textarea').value += id + "-" + type;
@@ -60,7 +60,7 @@ function dropMe(id, type, name, phys, magic, holy, def, atc) {
 	  updBoilerParams('holy', holy);
 	  updBoilerParams('def', def);
 	  updBoilerParams('atc', atc);
-	  document.getElementById("count_" + id).innerText =  parseInt(document.getElementById("count_" + id).innerText, 10) - 1;
+	  document.getElementById("count_" + id + "-" + type).innerText =  parseInt(document.getElementById("count_" + id + "-" + type).innerText, 10) - 1;
 	} else {
 		alert('Ингредиент "' + name + '" закончился!');
 	}
