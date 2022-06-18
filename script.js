@@ -59,6 +59,7 @@ function dropMe(id, type, name, phys, magic, holy, def, atc) {
   updBoilerParams('holy', holy);
   updBoilerParams('def', def);
   updBoilerParams('atc', atc);
+  document.getElementById("count_").innerText =  parseInt(document.getElementById("count_" + id).innerText, 10) - 1;
 }
 
 function transformMe(id, type) {
