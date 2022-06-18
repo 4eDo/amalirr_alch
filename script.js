@@ -45,7 +45,11 @@ function showMe(id, type) {
 
 function dropMe(id, type, name) {
   var myHtmlContent = '<td>'+name+'</td>';
-  document.getElementById('secret_textarea').value += id + "-" + type +"|";
+   if(document.getElementById('secret_textarea').value.length < 1) {
+     document.getElementById('secret_textarea').value += id + "-" + type;
+   } else {
+     document.getElementById('secret_textarea').value += "|" + id + "-" + type;
+   }
   var tableRef = document.getElementById('ingr_in_boiler').getElementsByTagName('tbody')[0];
 
   var newRow = tableRef.insertRow(tableRef.rows.length);
