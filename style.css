@@ -1,3 +1,7 @@
+html, body, #content {
+    height: 100%;
+}
+
 .ingr_items {
   width: 550px;
   border: 1px solid #000;
@@ -90,11 +94,16 @@ h4 {
 .def span {  background-color: #4ab304;}
 .atc span {  background-color: #f91313;}
 
+#ingr_panel {
+  display: inline-block;
+}
+
 #boiler_panel {
+  display: inline-block;
   vertical-align: middle;
 }
 #boiler {
-  display: inline-block;
+  display: block;
   position: absolute;
   width: 300px;
 }
