@@ -98,5 +98,5 @@ function updBoilerParams(type, addValue) {
    document.getElementById(textareaId).value = newStr;
 	
 	document.getElementById(barId).style.width = sum/count + "%";
-	document.getElementById(barId).title = sum/count + "%";
+	document.getElementById(barId+"_title").title = sum/count + "%";
 }
