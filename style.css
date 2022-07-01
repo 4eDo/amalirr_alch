@@ -17,6 +17,13 @@
 #ingr_panel > * {
   direction: ltr;
 }
+.ingrCard{
+    width: 600px;
+    z-index: -1;
+    height: 200px;
+    display: block;
+    position: absolute;
+}
 .r_buttons {
   position: absolute;
   display: block;
