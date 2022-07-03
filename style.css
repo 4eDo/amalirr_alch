@@ -102,6 +102,9 @@ h4 {
 .before_bar {
   display: inline-block;
   width: 50px;
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  line-height: 20px;
 }
 .bar{
   display: inline-block;
