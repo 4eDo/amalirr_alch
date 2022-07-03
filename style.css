@@ -10,9 +10,9 @@ h4 {
 .ingr_count {
   display: inline-block;
   position: absolute;
-  margin-left: -25px;
-  margin-top: 80px;
+  margin-top: 70px;
   font-family: 'Caveat', cursive;
+  font-size: 27px;
 }
 .ingr_count::after {
   content: " шт.";
