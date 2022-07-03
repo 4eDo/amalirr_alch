@@ -48,6 +48,13 @@ function dropMe(id, type, name, phys, magic, holy, def, atc) {
 		alert('Это секретный ингредиент! Его сырым класть нельзя. Сначала обработайте.');
 	} else {
 		if(parseInt(document.getElementById("count_" + id + "-" + type).innerText, 10) > 0){
+			let typeNum = 0;
+			switch(type) {
+				case "base": typeNum = 1; break;
+				case "type1": typeNum = 2; break;
+				case "type2": typeNum = 3; break;
+				case "type3": typeNum = 4; break;
+			}
 		  var myHtmlContent = '<td>'+name+'</td>';
 		   if(document.getElementById('secret_textarea').value.length < 1) {
 		     document.getElementById('secret_textarea').value += id + "-" + type;
@@ -99,4 +106,7 @@ function updBoilerParams(type, addValue) {
 	
 	document.getElementById(barId).style.width = sum/count + "%";
 	document.getElementById(barId+"_title").title = sum/count + "%";
+}
+function sendMePls(){
+	
 }
