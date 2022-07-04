@@ -1,3 +1,10 @@
+#sendToServer{
+  display: inline-block;
+  padding: 4px;
+  cursor: pointer;
+  background: #80808050;
+  border: 1px solid #000;
+}
 body {
     background-image: url("https://kartinkin.net/uploads/posts/2021-07/1626735102_10-kartinkin-com-p-stoleshnitsa-derevo-tekstura-besshovnaya-k-12.jpg");
 }
