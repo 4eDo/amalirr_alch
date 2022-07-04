@@ -55,18 +55,31 @@ h4 {
   display: block;
   padding: 10px;
   cursor: pointer;
-  background: #80808050;
-  border: 1px solid #000;
+  background: url(http://amalirr.ru/mods/holydays/alchimia/img/ingr_sost_pl_3.png) no-repeat;
+  position: relative;
+  left: -10px;
+  z-index: -2;
+  width: 100px;
 }
+
 .checked_ingr {
-  background: #808080;
+  filter: brightness(1.1) hue-rotate(45deg);
 }
 .bad_button {
   cursor: default;
-  background: #80808050;
   color: #808080;
   text-decoration:line-through;
+  filter: brightness(0.5);
 }
+
+.r_button_text {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+	display: block;
+  padding: 5px 5px 10px 7px;
+  cursor: pointer;
+}	
+
 .bottom_buttons{
   position: absolute;
   display: block;
