@@ -108,5 +108,16 @@ function updBoilerParams(type, addValue) {
 	document.getElementById(barId+"_title").title = sum/count + "%";
 }
 function sendMePls(){
-	
+	var arrayOfStrings = document.getElementById("boiler_phys_str").value.split(" ");
+	if(arrayOfStrings.length > 2) {
+		jQuery.post("/mods/holydays/alchimia/potions.php",  { 
+				id: uid,
+				potContent: potContent
+			}).done(function(data) {
+				alert(data);
+				if(data != 0){}
+			});
+	} else {
+		alert("В котле должн быть не менее трёх ингредиентов!");
+	}
 }
