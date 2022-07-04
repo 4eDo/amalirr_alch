@@ -5,40 +5,40 @@ function showMe(id, type) {
       document.getElementById(id + "-type1").style.display="none";
       document.getElementById(id + "-type2").style.display="none";
       document.getElementById(id + "-type3").style.display="none";
-      document.getElementById(id + "-base-but").classList.add("checked_ingr");
-      document.getElementById(id + "-type1-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type2-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type3-but").classList.remove("checked_ingr");
+      document.getElementById(id + "-base-but-bg").classList.add("checked_ingr");
+      document.getElementById(id + "-type1-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type2-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type3-but-bg").classList.remove("checked_ingr");
       break;
     case "type1":
       document.getElementById(id + "-base").style.display="none";
       document.getElementById(id + "-type1").style.display="block";
       document.getElementById(id + "-type2").style.display="none";
       document.getElementById(id + "-type3").style.display="none";
-      document.getElementById(id + "-base-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type1-but").classList.add("checked_ingr");
-      document.getElementById(id + "-type2-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type3-but").classList.remove("checked_ingr");
+      document.getElementById(id + "-base-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type1-but-bg").classList.add("checked_ingr");
+      document.getElementById(id + "-type2-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type3-but-bg").classList.remove("checked_ingr");
       break;
     case "type2":
       document.getElementById(id + "-base").style.display="none";
       document.getElementById(id + "-type1").style.display="none";
       document.getElementById(id + "-type2").style.display="block";
       document.getElementById(id + "-type3").style.display="none";
-      document.getElementById(id + "-base-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type1-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type2-but").classList.add("checked_ingr");
-      document.getElementById(id + "-type3-but").classList.remove("checked_ingr");
+      document.getElementById(id + "-base-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type1-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type2-but-bg").classList.add("checked_ingr");
+      document.getElementById(id + "-type3-but-bg").classList.remove("checked_ingr");
       break;
     case "type3":
       document.getElementById(id + "-base").style.display="none";
       document.getElementById(id + "-type1").style.display="none";
       document.getElementById(id + "-type2").style.display="none";
       document.getElementById(id + "-type3").style.display="block";
-      document.getElementById(id + "-base-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type1-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type2-but").classList.remove("checked_ingr");
-      document.getElementById(id + "-type3-but").classList.add("checked_ingr");
+      document.getElementById(id + "-base-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type1-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type2-but-bg").classList.remove("checked_ingr");
+      document.getElementById(id + "-type3-but-bg").classList.add("checked_ingr");
       break;
   }
 }
