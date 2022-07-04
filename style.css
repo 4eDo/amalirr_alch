@@ -30,8 +30,8 @@ h4 {
 }
 .ingr_items {
   position: relative;
-  width: 520px;
-  height: 200px;
+  width: 535px;
+  height: 225px;
   float: left;
 }
 #ingr_panel > * {
@@ -40,7 +40,7 @@ h4 {
 .ingrCard{
     width: 600px;
     z-index: -1;
-    height: 200px;
+    height: 225px;
     display: block;
     position: absolute;
 }
@@ -48,8 +48,8 @@ h4 {
   position: absolute;
   display: block;
   margin: 5px;
-  margin-left: 530px;
-  
+  margin-left: 540px;
+  margin-top: 20px;  
 }
 .r_button {
   display: block;
@@ -71,6 +71,7 @@ h4 {
   position: absolute;
   display: block;
   margin-top: 15px;
+  margin-left: 10px;
 }
 .bot_but {
   display: inline-block;
@@ -82,7 +83,7 @@ h4 {
 .ingr_item {
   position: absolute;
   display: none;
-  width: 520px;
+  width: 525px;
   height: 200px;
 }
 h4 {
