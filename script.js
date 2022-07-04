@@ -115,7 +115,9 @@ function sendMePls(uid){
 				id: uid,
 				potContent: potContent
 			}).done(function(data) {
-				alert(data);
+				if(confirm(data)) {
+					location.reload();
+				}
 				if(data != 0){}
 			});
 	} else {
