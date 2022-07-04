@@ -56,10 +56,11 @@ h4 {
   padding: 10px;
   cursor: pointer;
   background: url(http://amalirr.ru/mods/holydays/alchimia/img/ingr_sost_pl_3.png) no-repeat;
-  position: relative;
+  position: absolute;
   left: -10px;
   z-index: -2;
   width: 100px;
+  height: 35px
 }
 
 .checked_ingr {
