@@ -443,18 +443,37 @@
 	
 	$template = '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="https://4edo.github.io/amalirr_alch/style.css" media="screen" /><script type="text/javascript" src="https://4edo.github.io/amalirr_alch/script.js"></script></head>';
 	for($i = 0; $i < count($ingrList); $i++) {
-		$template .= '<div class="ingr_items"><div class="r_buttons"><span id="'.$i.'-base-but" class="r_button checked_ingr" onclick="showMe('.$i.', \'base\')">Сырой</span>';
+		$template .= '<div class="ingr_items"><div class="r_buttons">
+			<div id=id="'.$i.'-base-but" onclick="showMe('.$i.', \'base\')">
+				<div id="'.$i.'-base-but-bg" class="r_button"></div>
+				<span class="r_button_text">Сырой</span>
+			</div>';
 		if($ingrList[$i]['type1']['isOk']) {
-			$template .= '<span id="'.$i.'-type1-but" class="r_button" onclick="showMe('.$i.', \'type1\')">Настойка</span>';
+			$template .= '<div id="'.$i.'-type1-but" onclick="showMe('.$i.', \'type1\')">
+				<div id="'.$i.'-type1-but-bg" class="r_button"></div>
+				<span class="r_button_text">Настойка</span>
+				</div>';
 		} else {
-			$template .= '<span id="'.$i.'-type1-but" class="r_button bad_button" title="Такого ингредиента не существует!">Настойка</span>';
+			$template .= '<div id="'.$i.'-type1-but" title="Такого ингредиента не существует!">
+				<div id="'.$i.'-type1-but-bg" class="r_button bad_button"></div>
+				<span class="r_button_text">Настойка</span>
+				</div>';
 		}
 		if($ingrList[$i]['type2']['isOk']) {
-			$template .= '<span id="'.$i.'-type2-but" class="r_button" onclick="showMe('.$i.', \'type2\')">Сушёный</span>';
+			$template .= '<div id="'.$i.'-type2-but" onclick="showMe('.$i.', \'type2\')">
+				<div id="'.$i.'-type2-but-bg" class="r_button"></div>
+				<span class="r_button_text">Сушёный</span>
+				</div>';
 		} else {
-			$template .= '<span id="'.$i.'-type2-but" class="r_button bad_button" title="Такого ингредиента не существует!">Сушёный</span>';
+			$template .= '<div id="'.$i.'-type2-but" title="Такого ингредиента не существует!">
+				<div id="'.$i.'-type2-but-bg" class="r_button bad_button"></div>
+				<span class="r_button_text">Сушёный</span>
+				</div>';
 		}
-		$template .= '<span id="'.$i.'-type3-but" class="r_button" onclick="showMe('.$i.', \'type3\')">Вытяжка</span></div>';
+		$template .= '<div id="'.$i.'-type3-but" onclick="showMe('.$i.', \'type3\')">
+				<div id="'.$i.'-type3-but-bg" class="r_button"></div>
+				<span class="r_button_text">Вытяжка</span>
+				</div>';
 		
 		$template .= '<div class="ingr_item" id="'.$i.'-base" style="display:block;"><h4>'.$ingrList[$i]['base']['name'].'</h4><div class="col_l"><img src=""></div>';
 		$template .= '<div class="col_r"><div class="ingr_params"><span class="before_bar">Маг &nbsp;</span><div class="bar magic" title="Магическая составляющая"><span class="bg" style="width:'.$ingrList[$i]['base']['magic'].'%">&nbsp;</span></div></div>';
