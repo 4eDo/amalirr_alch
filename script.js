@@ -107,9 +107,10 @@ function updBoilerParams(type, addValue) {
 	document.getElementById(barId).style.width = sum/count + "%";
 	document.getElementById(barId+"_title").title = sum/count + "%";
 }
-function sendMePls(){
-	var arrayOfStrings = document.getElementById("boiler_phys_str").value.split(" ");
-	if(arrayOfStrings.length > 2) {
+function sendMePls(uid){
+	var potContent = document.getElementById("secret_textarea").value;
+	let potArr = potContent.split("|");
+	if(potArr.length > 2) {
 		jQuery.post("/mods/holydays/alchimia/potions.php",  { 
 				id: uid,
 				potContent: potContent
