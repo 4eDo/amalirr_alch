@@ -128,10 +128,10 @@ h4 {
   background-color: #000;
   height: inherit;
 }
-.magic span {  background-color: #e613f9;}
-.phys span {  background-color: #0f74ff;}
-.holy span {  background-color: #fdcf39;}
-.def span {  background-color: #4ab304;}
+.magic span {  background-color: #be5ce7;}
+.phys span {  background-color: #933333;}
+.holy span {  background-color: #F5DA51;}
+.def span {  background-color: #38af6d;}
 .atc span {  background-color: #f91313;}
 
 #ingr_panel {
